@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+		<title>LitCity</title>
+	</head>
+	<style>
+		.carousel-inner > .item > img,
+		.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  	}
+		#headpic{
+			width: 100%;
+			top:0px;
+			height:600px;
+		}
+		.headposter{
+			position:relative;
+		}
+		h1{
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 100%;
+			text-align: center;
+			font-size: 600%;
+			font-family: 'Poiret One', cursive;
+			color:#8C0000;
+		}
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+			background-color: #111;
+			text-decoration:none;
+		}
+
+		.active {
+			background-color: #af4848;
+			text-decoration: none;
+		}
+		#featurepic{
+		position:relative;
+			height:600px;
+			width:100%;
+			z-index: -2;
+		}
+		#featuredcity{
+			text-align:center;
+			position: absolute;
+			left: 0;
+			top: 100%;
+			width: 100%;
+			text-align: center;
+			font-family: 'Poiret One', cursive;
+			color:#8C0000;
+			z-index: -2;
+		}
+		h2{
+			font-size:500%;
+		}
+		h3{
+			font-size:300%;
+			text-shadow: 2px 2px black;
+			color:#E36E55;
+		}
+		.featurep{
+			position: absolute;
+			text-align:center;
+			left:25%;
+			width:50%;
+			top:230%;
+			text-shadow: 1px 1px black;
+			color:#8C0000;
+			font-size: 150%;
+			z-index:-2;
+			border-style: solid;
+			border-width: 5px;
+		}
+		#cityofgold{
+			position:relative;
+			height:700px;
+			width:100%;
+			z-index: -2;
+			opacity:0.7;
+		}
+		#myCarousel{
+			position: absolute;
+			text-align:center;
+			left:30%;
+			width:40%;
+			top:130%;
+			text-shadow: 1px 1px black;
+			color:#8C0000;
+			font-size: 150%;
+			z-index:-1;
+		}
+		#pictures{
+				width: 400px;
+				height:250px;
+			}
+		#container{
+			z-index:-1;
+		}
+		.description{
+			font-size: 60%;
+			color: #8C0000;
+			text-shadow: 1px 1px white;
+		}
+	</style>
+	<body>
+		<div id="headposter">
+			<img src="http://nashvilleama.org/wp-content/uploads/2015/06/spotlight-2.jpg" alt="Spotlight" id="headpic">
+			<h1><b>SPOTLIGHT</b></h1>
+		</div>
+		<ul class="list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="nearme.html">Near Me</a></li>
+			<li><a href="myschedule.html">My Schedule</a></li>
+			<li><a class="active" href="spotlights.html">Spotlight</a></li>
+		</ul>
+		<div class="cityfeature">
+			<img src="http://www.fairfieldsuiteschicago.com/images/fairifield-inn-and-suites-chicago-magnificent-mile-illinois-exterior.jpg" alt="Chicago Picture" id="featurepic">
+			<div id="featuredcity">
+				<h2 id="cityname"><b>CHICAGO:</b></h2>
+				<h3><b> The City Doing Front Flips</b></h3>
+			</div>
+			<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators" id="pictures">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="https://matthewstevensmith.files.wordpress.com/2012/05/photo.jpg" alt="Young Chicago Authors" width="460" height="200">
+        <div class="carousel-caption">
+          <h4><a href="youngchicagoauthors.org">Young Chicago Authors</a></h4>
+          <p class="description">Young Chicago Authors hosts a variety of events, like Wordplay, a writing workshop that closes out with an open mic and a featured poet every Tuesday at 6 pm and Queeriosity, a safe space for queer and questioning youth ages 17 to 24 every third Thursday. Stop by YCA for an electric atmosphere of poets and musicians that aren't afraid to get deep.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="data:image/jpeg;base64,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" alt="Ode to the City" width="460" height="200">
+        <div class="carousel-caption">
+          <h4>Ode to the City</h4>
+          <p class="description">Ode to the City: Ode to the City is a safe place for citizens of Chicago. The events are free writing workshops, a summer camp that teaches spoken word poetry, and free concerts. Just check them out of Facebook and you will find so many opportunities to let your creativity flow. </p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://freecoolhandluke.com/wp-content/uploads/2013/06/kumba_lynx-logo.jpg" alt="Kuumba Lynxx" width="460" height="200">
+        <div class="carousel-caption">
+          <h3>Kuumba Lynxx</h3>
+          <p class="description">Kuumba Lynxx represents over 27 communities in the Chicagoland area. Kuumba Lynxx prides itself in making a safe space for it’s members. Kuumba Lynxx offers a wide range of activities, such as, film screenings, apprenticeships for young authors, praxi sharing, and open mic nights. Kuumba Lynxx is a diverse environment open to an assortment of age groups. </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+			<img src="http://www.nemonic.com.au/wp-content/uploads/2013/04/Chicago-view-from-an-airplane-Illinois-United-States.jpg" alt="City of Gold" id="cityofgold">
+
+			<p class="featurep">Chicago is known for how it seems to always be alive, from its amazing lights and towering skyscrapers to its neighborhoods decorated in graffitti and murals. Whether it be free Zumba in the park or all the museums it has to offer, it is nearly impossible to be bored. Chicago is one of the most diverse cities in the world. You are able to see so many different ethnicities, races, and religions just by walking down the street. Artistic expression is vibrant in Chicago. Programs such as Young Chicago Authors, Kuumba Lynxx, Ode To The City. and the Art Incubator provide creative and safe spaces for Chicagoans, while groups like the Black Youth Project, Assata’s Daughters, and the Let Us Breathe collectively work tirelessly to make Chicago a safer, healthier city for its marginalized communities. Alternatively, Chicago is ripe with artistic colleges and colorful murals, so the city is always painted beautifully. As Chance the Rapper expressed, Chicago is truly the city doing front flips, with how it is beautiful, vibrant, and alive. Let LitCity show you around Chicago’s forever blooming art scene, and learn a little about the beautiful city, and yourself, along the way.</p>
+
+		</div>
+	</body>
+</html>
